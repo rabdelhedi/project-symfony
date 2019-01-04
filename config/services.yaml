@@ -30,3 +30,10 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    fos_user_service:
+        class: App\Services\FosUserService
+        public: true
+        arguments:
+            - "@service_container"
+            - "@doctrine.odm.mongodb.document_manager"
