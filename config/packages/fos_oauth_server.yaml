@@ -1,0 +1,10 @@
+fos_oauth_server:
+    db_driver: mongodb       # Driver availables: orm, mongodb, or propel
+    client_class:        App\Document\Client
+    access_token_class: App\Document\AccessToken
+    refresh_token_class: App\Document\RefreshToken
+    auth_code_class: App\Document\AuthCode
+    service:
+        user_provider: fos_user.user_provider.username
+        options:
+              supported_scopes: read
