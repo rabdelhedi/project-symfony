@@ -6,6 +6,9 @@
 /public/bundles/
 /var/
 /vendor/
+.composer.json
+.composer.lock
+.idea/*
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

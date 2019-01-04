@@ -1,0 +1,7 @@
+fos_user:
+  db_driver: mongodb
+  user_class: App\Document\User
+  firewall_name: main
+  from_email:
+          address: test@test.com
+          sender_name: test
