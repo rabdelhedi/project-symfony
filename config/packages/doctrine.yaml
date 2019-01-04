@@ -27,3 +27,19 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+
+doctrine_mongodb:
+    connections:
+        default:
+            server: "%mongodb_server%"
+            options: { username: "%mongodb_username%", password: "%mongodb_password%" }
+    default_database: "%mongodb_database%"
+    document_managers:
+        default:
+            auto_mapping: true
+            mappings:
+                App:
+                  is_bundle: false
+                  type: annotation
+                  dir: '%kernel.project_dir%/src/Document'
+                  prefix: 'App\Document'
